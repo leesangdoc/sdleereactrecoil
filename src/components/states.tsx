@@ -51,7 +51,7 @@ const charState = selector({
       const name = get(nameState);
       return name.length;
     } catch(err){
-      throw err;
+      throw err; 
     }
   }
   , set: ({set}, newValue)=> {
@@ -59,7 +59,7 @@ const charState = selector({
   }
 });
 
-// 비동기 처리를 하는 recoil selector
+// 비동기 처리를 하는 recoil selector 
 // https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=f5eef3421c602c6cb7ea224104795888&targetDt=20230129
 
 const myQuery = selector({
